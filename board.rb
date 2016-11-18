@@ -4,7 +4,7 @@ class Board
   attr_accessor :grid
 
   def initialize(size = 9)
-    @grid = Array.new(size) {Array.new(size) {Tile.new("b")}}
+    @grid = Array.new(size) {Array.new(size) {Tile.new("c")}}
   end
 
   def render
@@ -16,6 +16,8 @@ class Board
     end
   end
 end
+
+
 
 if __FILE__ == $PROGRAM_NAME
   board = Board.new
